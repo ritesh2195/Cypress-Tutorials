@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import homePage from "../PageObjects/HomePage"
-import SelectPage from "../PageObjects/SelectPage"
+import homePage from "../../support/PageObjects/HomePage"
+import SelectPage from "../../support/PageObjects/SelectPage"
 
 describe('fixture', function(){
 
