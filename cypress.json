@@ -2,6 +2,10 @@
 
     "defaultCommandTimeout":10000,
 
-    "chromeWebSecuirty": false
+    "chromeWebSecuirty": false,
+	"env":{
+
+        "url":"https://rahulshettyacademy.com/angularpractice/"
+    }
 
 }
