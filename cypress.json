@@ -1,11 +1,14 @@
 {
+  "defaultCommandTimeout": 10000,
+  "chromeWebSecuirty": false,
+  "reporter":"mochawesome",
+  "testFiles": "**/*.feature",
+  "retries":{
 
-    "defaultCommandTimeout":10000,
-
-    "chromeWebSecuirty": false,
-	"env":{
-
-        "url":"https://rahulshettyacademy.com/angularpractice/"
-    }
-
+    "runMode":1
+  },
+  "env": {
+    "url": "https://rahulshettyacademy.com/angularpractice/"
+  },
+  "projectId": "ymnoik"
 }

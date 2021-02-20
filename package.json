@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run cypress\\integration\\mytest\\**\\*",
+    "headmode": "npm run test -- --headed --browser chrome",
+    "recordDashBoard": "npm run test -- --record --key 6fb8b22b-9b55-4952-9343-ce888caf8e30 --reporter mochawesome",
+    "windowHandle": "npm run test -- --spec \"cypress\\integration\\window\\*\" "
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "author": "Ritesh",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "cypress": "^6.4.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.3.0",
+    "mochawesome": "^6.2.2"
   }
 }
