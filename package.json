@@ -6,7 +6,6 @@
   "scripts": {
     "test": "npx cypress run cypress\\integration\\mytest\\**\\*",
     "headmode": "npm run test -- --headed --browser chrome",
-    "recordDashBoard": "npm run test -- --record --key 6fb8b22b-9b55-4952-9343-ce888caf8e30 --reporter mochawesome",
     "windowHandle": "npm run test -- --spec \"cypress\\integration\\window\\*\" "
   },
   "cypress-cucumber-preprocessor": {
